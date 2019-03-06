@@ -43,6 +43,7 @@ public class UserController {
 		if (userId == null) {
 			return "index";
 		}
+		System.out.println("ceshi222");
 		User user = userService.getUserById(userId);
 		model.addAttribute("user", user);
 		return "user/showUser";
